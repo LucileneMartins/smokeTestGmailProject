@@ -1,5 +1,5 @@
 # smokeTestGmailProject
-H
+
 Project Test Web
 
 Tools and Libs:
@@ -10,7 +10,7 @@ Tools and Libs:
 - GitHub Actions - CI/CD
 
 
-## 🎯 prerequisites
+## 🎯 Prerequisites
 
 <b>Install Node  </b></br> 
 node -v </br>
@@ -32,4 +32,6 @@ npm -v  </br>
 <b>Run test CI/CD  </b></br>
 $ npm run cy:testing</br>
 
-## :rocket: Use
+## :rocket: Exercise
+Test Plan </b></br>
+Test case </b></br>
