@@ -1,0 +1,33 @@
+{
+  "name": "smoketestgmailproject",
+  "version": "1.0.0",
+  "description": "challenge automation and manual test",
+  "main": "index.js",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "node": "^17.7.2",
+    "nodejs": "0.0.0",
+    "npm": "^8.7.0"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^8.0.0",
+    "cypress": "^9.5.4"
+  },
+  "scripts": {
+    "cy:run": "npx run cypress --spec **/*.features",
+    "cy:open": "npx run cypress --spec **/*.features"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LucileneMartins/smokeTestGmailProject.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LucileneMartins/smokeTestGmailProject/issues"
+  },
+  "homepage": "https://github.com/LucileneMartins/smokeTestGmailProject#readme"
+}
