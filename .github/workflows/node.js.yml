@@ -32,3 +32,16 @@ jobs:
       
     - name: Run Cypress Test
       run: npm run cy:run
+      
+    - name: Run Cypress Test
+      uses: cypress-io/github-action@v2
+      with:
+          record: true
+          group: Tests on Node v${{ matrix.node }}
+          cache-key: node-v${{ matrix.node }}-on-${{ runner.os }}-hash-${{ hashFiles('yarn.lock') }}
+          
+      env:
+          CYPRESS_firstName: Lucilene
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
+
+ 
