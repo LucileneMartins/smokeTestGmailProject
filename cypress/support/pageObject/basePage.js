@@ -3,11 +3,14 @@
 class CypressMethods {
     
     openUrl(url) {
-    cy.visit('')
+      cy.clearCookies();
+      cy.clearLocalStorage();
+      cy.visit('/')
+      
     }
 
     getElement(element) {
-    return cy.get(element);
+      return cy.get(element);
     }
 
     typeElement(element, value) {
@@ -48,7 +51,7 @@ class CypressMethods {
     ifExistElement(element, element2){
       cy.get("body").then($body => {
         if ($body.find(element).length > 0) {   
-            clickButton(element2)
+            cy.get(element2).click()
         }
     });
   }
