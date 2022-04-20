@@ -11,14 +11,16 @@
   },
   "devDependencies": {
     "@cucumber/cucumber": "^8.0.0",
-    "cypress": "^9.5.4"
+    "cypress": "^9.5.4",
+    "cypress-cucumber-preprocessor": "^4.3.1"
   },
   "scripts": {
-    "cy:run": "npx run cypress --spec **/*.features",
-    "cy:open": "npx run cypress --spec **/*.features"
+    "cy:run": "./node_modules/.bin/cypress run",
+    "cy:open": "./node_modules/.bin/cypress open",
+    "cy:tags": "./node_modules/.bin/cypress-tags run -e TAGS='@smokeTest'"
   },
   "cypress-cucumber-preprocessor": {
-    "nonGlobalStepDefinitions": true
+    "step_definitions": "cypress/support/steps"
   },
   "repository": {
     "type": "git",

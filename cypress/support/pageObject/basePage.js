@@ -3,7 +3,7 @@
 class CypressMethods {
     
     openUrl(url) {
-    cy.visit('/')
+    cy.visit('')
     }
 
     getElement(element) {
@@ -17,6 +17,9 @@ class CypressMethods {
     clickButton(element) {
       cy.get(element).click()
     }
+    clickLastButton(element) {
+      cy.get(element).last().click();
+    }
 
     enter(element) {
       cy.get(element).click('{enter}')
@@ -28,21 +31,29 @@ class CypressMethods {
 
     containsValueClick(element){
       cy.contains(element).should('be.checked');
+    }
+
+    doubleClick(element) {
+      cy.get(element).dblclick();
+    }
+    
+    rightClick(element) {
+      cy.get(element).rightclick();
+    }
+
+    clickMe(element){
+      cy.get(element).eq(3).click();
+    }
+
+    ifExistElement(element, element2){
+      cy.get("body").then($body => {
+        if ($body.find(element).length > 0) {   
+            clickButton(element2)
+        }
+    });
   }
 
-  doubleClick(element) {
-    cy.get(element).dblclick();
-  }
-  
-  rightClick(element) {
-    cy.get(element).rightclick();
-  }
-
-  clickMe(element){
-    cy.get(element).eq(3).click();
-  }
-
-  }
+}
   
   const cypressMethods = new CypressMethods();
   export default cypressMethods;

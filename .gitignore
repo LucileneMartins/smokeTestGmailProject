@@ -105,3 +105,6 @@ dist
 
 #doc 
 .env.staging
+
+#images or videos
+videos/
