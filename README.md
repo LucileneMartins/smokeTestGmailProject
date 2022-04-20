@@ -5,8 +5,9 @@ Project Test Web
 Tools and Libs:
 
 - Cypress
+- Cucumber
 - Linguagem Javascript
-- Allure report
+- XXX report
 - GitHub Actions - CI/CD
 
 
