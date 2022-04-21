@@ -39,7 +39,7 @@ Feature: Create new account on Gmail
         And fill verification code incorrectly
         Then form will validate and show up the message error in each fiels incorrect
 
-    @smokeTest
+    @non_automated
     Scenario: Non agree with privacy and terms
         Given The user access the gmail on browser
         When access the link create a new account
