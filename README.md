@@ -1,11 +1,46 @@
-## 💡 Notes About challenge
+# smokeTestGmailProject
+
+Project Test Web
+
+Tools and Libs:
+
+- Cypress
+- Cucumber
+- Linguagem Javascript
+- Cypress Dashboard - see documentation [here]( https://dashboard.cypress.io/projects/***/runs)
+- GitHub Actions - CI/CD
 
 
-Hey I would like to say was nice to participate of this challenge  </b></br>
-I have to say some hard things i found to automated this feature create account : </b></br>
+## 🎯 Prerequisites
 
-- It was hard to maintain the zone ( Brazil/USA)
-- It was impossible to pass of the phone verirification, this is a good feature that provides to the user
-  if i try to automate this in my mind is a litle odd, the reason why google use security feature is to provide security not break her, so in my knoledgment in a project we can work with feature flags , controll environment, and control Data when the telephone and code verification is being expected ( mock on code)
-- In a Agile Team, i'm not working with the Test plan, was litle hard to built this documentation but i tried to do my best
+<b>Install Node  </b></br> 
+node -v </br>
+
+<b>Install NPM </b></br>
+npm -v  </br>
+
+<b>Clone project </b></br>
+
+<b>Install dependencies package.json </b> </br>
+ $ npm install</br>
+ 
+ Done ✔️
+
+
+## 💡 Use
+
+<b>Run test with tags - used on ci/cd  </b></br>
+$ npm run cy:tags </br>
+
+<b>Open Cypress gui </b></br>
+$ npm run cy:open </br>
+
+<b>Run cypress non-gui </b></br>
+$ npm run cy:run </br>
+
+
+## :rocket: Exercise
+Test Plan - [here](https://github.com/LucileneMartins/smokeTestGmailProject/blob/main/cypress/testPlan/test-plan-Lucilene.pdf) </b></br>
+Test case - [here](https://github.com/LucileneMartins/smokeTestGmailProject/blob/main/cypress/integration/newAccount.feature)  </b></br>
+Notes - [here](https://github.com/LucileneMartins/smokeTestGmailProject/blob/main/cypress/testPlan/README2.md)
 
