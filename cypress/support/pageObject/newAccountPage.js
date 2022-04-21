@@ -7,7 +7,8 @@ import { randomNumber } from '../dataDriven/generateData';
 class newAccount {
 
     clickOnCreateNewAccount() {
-        cybaseMethod.clickLastButton(baseElement.buttonCreateNewAccount)
+        cybaseMethod.ifExistButton("Create an account", "Criar uma conta", "Criar conta")
+
     }
 
 

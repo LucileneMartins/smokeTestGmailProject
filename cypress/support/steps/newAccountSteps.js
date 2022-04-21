@@ -9,7 +9,7 @@ Given("The user access the gmail on browser", () => {
 
 When("access the link create a new account", () => {
     newAccount.clickOnCreateNewAccount();
-    newAccount.fieldPersonAccount();
+    //newAccount.fieldPersonAccount();
 })
 
 And("fill in the data correctly in the form", () => {
