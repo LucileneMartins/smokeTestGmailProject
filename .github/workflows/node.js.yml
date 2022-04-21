@@ -29,14 +29,13 @@ jobs:
         
     - name: Install Dependencies
       run: npm install
-      
-    - name: create folder
-      run: |
-            mkdir videos
+
     - name: Cypress run
       uses: cypress-io/github-action@v2
       with:
           record: true
+          group: "Smoke Tests"
+          command: npm run cy:tags --record
       env:
           # pass the Dashboard record key as an environment variable
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
