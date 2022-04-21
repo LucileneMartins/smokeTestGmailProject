@@ -45,6 +45,16 @@ class CypressMethods {
     });
   }
 
+  ifExistCreatButton(element) {
+
+    cy.get("body").then($body => {
+      if ($body.find(element).length > 0) {
+        cy.contains(element).click()
+      }
+
+    });
+  }
+
   ifElementIsVisible(element) {
     cy.get(element).should('be.visible')
   }
