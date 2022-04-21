@@ -1,10 +1,8 @@
-require('dotenv').config({ path: process.env.NODE_ENV === "production" ? ".env.prod" : ".env.staging" });
-
 export const email = 'LucileneMartinsQA';
 export const name = 'Lucilene';
 export const lastName = 'QA';
-export const password = process.env.PASSWORD;
-export const confirmPassword = process.env.PASSWORD;
+export const password = '1QAOnRuna@@';
+export const confirmPassword = '1QAOnRuna@@';
 
 
 
