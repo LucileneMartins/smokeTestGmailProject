@@ -16,6 +16,10 @@ class CypressMethods {
     cy.get(element).type(value)
   }
 
+  clickIfContainsButton(element, value) {
+    cy.contains(element).click()
+  }
+
   clickButton(element) {
     cy.get(element).click()
   }
@@ -40,16 +44,6 @@ class CypressMethods {
       }
       else {
         cy.contains(element2).click()
-      }
-
-    });
-  }
-
-  ifExistCreatButton(element) {
-
-    cy.get("body").then($body => {
-      if ($body.find(element).length > 0) {
-        cy.contains(element).click()
       }
 
     });
