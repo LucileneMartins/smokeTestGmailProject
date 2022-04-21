@@ -41,11 +41,3 @@ jobs:
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           CYPRESS_PROJECT_ID: ${{ secrets.CYPRESS_PROJECT_ID }}
-          
-    - uses: actions/upload-artifact@v2
-      if: always()
-      with:
-          name: cypress-videos
-          path: cypress/videos
-
- 
