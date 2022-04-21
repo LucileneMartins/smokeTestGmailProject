@@ -6,7 +6,7 @@ Tools and Libs:
 
 - Cypress
 - Cucumber
-- Linguagem Javascript
+- Javascript
 - Cypress Dashboard 
 - GitHub Actions - CI/CD
 
