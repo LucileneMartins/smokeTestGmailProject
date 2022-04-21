@@ -42,3 +42,4 @@ $ npm run cy:run </br>
 ## :rocket: Exercise
 Test Plan - [here](https://github.com/LucileneMartins/smokeTestGmailProject/blob/main/cypress/testPlan/test-plan-Lucilene.pdf) </b></br>
 Test case - [here](https://github.com/LucileneMartins/smokeTestGmailProject/blob/main/cypress/integration/newAccount.feature)  </b></br>
+Notes - [here](https://github.com/LucileneMartins/smokeTestGmailProject/blob/main/cypress/integration/README2.md)
