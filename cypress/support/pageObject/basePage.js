@@ -33,6 +33,7 @@ class CypressMethods {
   }
 
   ifExistButton(element, element2) {
+    cy.wait(20000);
     cy.get("body").then($body => {
       if ($body.find(element).length > 0) {
         cy.contains(element).click()
