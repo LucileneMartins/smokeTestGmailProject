@@ -7,7 +7,7 @@ Tools and Libs:
 - Cypress
 - Cucumber
 - Linguagem Javascript
-- Cypress Dashboard - see documentation [here]( https://dashboard.cypress.io/projects/***/runs/1)
+- Cypress Dashboard - see documentation [here]( https://dashboard.cypress.io/projects/***/runs)
 - GitHub Actions - CI/CD
 
 
@@ -29,16 +29,16 @@ npm -v  </br>
 
 ## 💡 Use
 
-<b>Run test CI/CD  </b></br>
+<b>Run test with tags - used on ci/cd  </b></br>
 $ npm run cy:tags </br>
 
 <b>Open Cypress gui </b></br>
 $ npm run cy:open </br>
 
-<b>Run cypress non gui </b></br>
+<b>Run cypress non-gui </b></br>
 $ npm run cy:run </br>
 
 
 ## :rocket: Exercise
-Test Plan - </b></br>
+Test Plan - [here](https://github.com/LucileneMartins/smokeTestGmailProject/blob/main/cypress/testPlan/test-plan-Lucilene.pdf) </b></br>
 Test case - [here](https://github.com/LucileneMartins/smokeTestGmailProject/blob/main/cypress/integration/newAccount.feature)  </b></br>
