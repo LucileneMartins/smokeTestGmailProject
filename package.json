@@ -16,7 +16,7 @@
   "scripts": {
     "cy:run": "./node_modules/.bin/cypress run",
     "cy:open": "./node_modules/.bin/cypress open",
-    "cy:tags": "./node_modules/.bin/cypress-tags run --browser chrome -e TAGS='@smokeTest'"
+    "cy:tags": "npx cypress run --browser chrome -e TAGS='@smokeTest'"
   },
   "cypress-cucumber-preprocessor": {
     "step_definitions": "cypress/support/steps"

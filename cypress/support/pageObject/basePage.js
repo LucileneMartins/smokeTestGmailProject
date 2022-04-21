@@ -32,17 +32,15 @@ class CypressMethods {
     });
   }
 
-  ifExistButton(element, element2, element3) {
+  ifExistButton(element, element2) {
     cy.get("body").then($body => {
       if ($body.find(element).length > 0) {
         cy.contains(element).click()
       }
-      else if ($body.find(element2).length > 0) {
+      else {
         cy.contains(element2).click()
       }
-      else {
-        cy.contains(element3).click()
-      }
+
     });
   }
 
