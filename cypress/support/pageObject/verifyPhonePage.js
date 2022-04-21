@@ -1,21 +1,18 @@
 import cybaseMethod from './basePage';
-import * as elementNewAccount from '../elements/newAccountElement'
 import * as baseElement from '../elements/baseElements'
-import * as data from '../dataDriven/datatest';
-import {randomTelephoneNumber} from '../dataDriven/generateData';
-const dotenv = require('dotenv');
-dotenv.config({ path: '../../../.env' });
-
+import { randomTelephoneNumber } from '../dataDriven/generateData';
 
 
 class phonePage {
 
-    fillFormPhone(){
-        cybaseMethod.typeElement(baseElement.telefone, randomTelephoneNumber)
-        cybaseMethod.clickButton(baseElement.buttonNext);
+    verifyIfPageIsVisible() {
+        cybaseMethod.ifElementIsVisible(baseElement.pagePhone)
     }
 
-   
+    fillFormPhone() {
+        cybaseMethod.typeElement(baseElement.telefone, randomTelephoneNumber())
+        cybaseMethod.clickButton(baseElement.buttonNext);
+    }
 
 }
 

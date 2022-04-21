@@ -26,4 +26,3 @@ module.exports = (on, config) => {
   on('file:preprocessor', cucumber())
 }
 
-require('dotenv').config();

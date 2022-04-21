@@ -4,7 +4,6 @@
   "description": "challenge automation and manual test",
   "main": "index.js",
   "dependencies": {
-    "dotenv": "^16.0.0",
     "node": "^17.7.2",
     "nodejs": "0.0.0",
     "npm": "^8.7.0"
