@@ -33,24 +33,12 @@ jobs:
     - name: create folder
       run: |
             mkdir videos
-
-    - name: Run Cypress Test
-      run: npm run cy:tags      
-                         
+    - name: Cypress run
+      uses: cypress-io/github-action@v2
+      with:
+          record: true
       env:
-          CYPRESS_firstName: Lucilene
+          # pass the Dashboard record key as an environment variable
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
+          # pass GitHub token to allow accurately detecting a build vs a re-run build
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          CYPRESS_PROJECT_ID: ${{ secrets.CYPRESS_PROJECT_ID }}
-          
-    - uses: actions/upload-artifact@v2
-      if: always()
-      with:
-          name: cypress-videos
-          path: cypress/videos
-        
-    - name: Deploy to githubPages
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          PUBLISH_DIR: cypress/videos
