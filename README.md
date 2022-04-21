@@ -39,11 +39,6 @@ $ npm run cy:open </br>
 $ npm run cy:run </br>
 
 
-## 🎯 notes
-
-On the root the projet you can see a .env.example with a structure you need to run tests.</b></br>
-<b> To run test you need to rename the file for .env and include data on global variable</b></br>
-
 ## :rocket: Exercise
 Test Plan - </b></br>
 Test case - [here](https://github.com/LucileneMartins/smokeTestGmailProject/blob/main/cypress/integration/newAccount.feature)  </b></br>
