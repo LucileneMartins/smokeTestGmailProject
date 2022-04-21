@@ -29,15 +29,14 @@ jobs:
         
     - name: Install Dependencies
       run: npm install
+      
+    - name: create folder
+      run: |
+            mkdir videos
 
     - name: Run Cypress Test
-      uses: cypress-io/github-action@v2
-      with:
-          name: create Folder
-          path: cypress/videos
-          start: npm run cy:tags
-          record: true
-                    
+      run: npm run cy:tags      
+                         
       env:
           CYPRESS_firstName: Lucilene
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
@@ -49,3 +48,11 @@ jobs:
       with:
           name: cypress-videos
           path: cypress/videos
+        
+    - name: Deploy on Github Pages
+      if: always()
+      uses: peaceiris/actions-gh-pages@v2
+      env:
+          PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PUBLISH_BRANCH: gh-pages
+          PUBLISH_DIR: cypress-videos
