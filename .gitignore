@@ -104,7 +104,13 @@ dist
 .tern-port
 
 #doc 
-.env.staging
+.env
+
 
 #images or videos
-videos/
+.DS_Store
+cypress/config/secrets.json
+cypress/screenshots/
+cypress/videos/
+node_modules/
+cypress.env.json

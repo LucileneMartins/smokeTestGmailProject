@@ -3,7 +3,6 @@
 import baseMethod from '../pageObject/basePage'
 import newAccount from '../pageObject/newAccountPage'
 
-
 Given("The user access the gmail on browser", () => {
     baseMethod.openUrl();
 })
@@ -17,10 +16,28 @@ And("fill in the data correctly in the form", () => {
     newAccount.fillFormCreateNewAccount();
 })
 
-And("fill all data on 'verify your number' form correctly", () => {
-    console.log("Entrei no And 2 ")
+And("fill data on verify your number form correctly", () => {
+    cy.log("Doesnt have steps in  here")
 })
 
-// Then("fill all data on 'verify your number' form  correctly", () => {
-//     loginPage.visualizarBotaoRecuperarSenha();
-// })
+And("fill verification code correctly", () => {
+    cy.log("Doesnt have steps in  here")
+})
+
+And("fill personal information on welcome form", () => {
+    cy.log("Doesnt have steps in  here")
+})
+
+And("link your phone number at your google account", () => {
+    cy.log("Doesnt have steps in  here")
+})
+
+And("agree with Privacy & Terms", () => {
+    cy.log("Doesnt have steps in  here")
+})
+
+Then("the user will be able to acess email and google resources", () => {
+    cy.log("Doesnt have steps in  here")
+})
+
+

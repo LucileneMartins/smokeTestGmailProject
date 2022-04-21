@@ -4,7 +4,6 @@
   "description": "challenge automation and manual test",
   "main": "index.js",
   "dependencies": {
-    "dotenv": "^16.0.0",
     "node": "^17.7.2",
     "nodejs": "0.0.0",
     "npm": "^8.7.0"
@@ -17,7 +16,7 @@
   "scripts": {
     "cy:run": "./node_modules/.bin/cypress run",
     "cy:open": "./node_modules/.bin/cypress open",
-    "cy:tags": "./node_modules/.bin/cypress-tags run -e TAGS='@smokeTest'"
+    "cy:tags": "npx cypress run --browser chrome -e TAGS='@smokeTest'"
   },
   "cypress-cucumber-preprocessor": {
     "step_definitions": "cypress/support/steps"
